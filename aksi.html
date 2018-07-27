@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sub Aksi-GODATAIPB</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+	
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		
+		<script type="text/javascript">
+$(function () {
+
+    $(document).ready(function () {
+
+        // Build the chart
+$('#container').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Pengetahuan Mahasiswa IPB mengenai Aksi dari BEM KM 2016'
+        },
+
+        xAxis: {
+            categories: ['Aksi Green Campus', 'Aksi Jeroan Impor','Aksi Hari Tani', 'Aksi Mengawal 2 Thaun Jokowi-JK','Aksi Hari Pendidikan Nasional (HARDIKNAS)','Aksi Bersama Peternak', 'Aksi Hari Kebangkitan Nasinal (HARKITNAS)','Tidak Ada yang Tahu'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: false
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: 0,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Persentase responden',
+            data: [25.64, 7.00, 15.82 , 27.82, 8.43, 4.83, 7.63, 2.84]
+        }]
+    });		
+ 
+     
+	$('#container1').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+						  enabled: false
+					  },
+            title: {
+                text: 'Alasan Mahasiswa IPB Tidak Ikut Aksi'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.2f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Belum Ada Kesempatan',
+                    y: 0.46
+                }, {
+                    name: 'Bentrok dengan jadwal akademik',
+                    y: 48.02
+                }, {
+                    name: 'Izin orang tua',
+                    y: 17.38
+                }, {
+                    name: 'Kesehatan',
+                    y: 5.41
+                }, {
+                    name: 'Lainnya',
+                    y: 1.33
+                }, {
+                    name: 'Lokasi',
+                    y: 3.74
+                }, {
+                    name: 'Malas',
+                    y: 17.05
+                }, {
+                    name: 'Panas',
+                    y: 0.04
+                }, {
+                    name: 'Tidak Ada Alasan',
+                    y: 0.83
+                }]
+            }]
+        });
+		$('#container2').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+						  enabled: false
+					  },
+            title: {
+                text: 'Media Publikasi yang Paling Efektif'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.2f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Jarkoman pribadi',
+                    y: 7.28
+                }, {
+                    name: 'Media cetak/pamflet/brosur/spanduk/mading',
+                    y: 7.32
+                }, {
+                    name: 'Media sosial',
+                    y: 55.59
+                }, {
+                    name: 'Sosialisasi secara langsung',
+                    y: 29.02
+                }, {
+                    name: 'Lainnya',
+                    y: 0.79
+                }]
+            }]
+        }); 
+		$('#container3').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+						  enabled: false
+					  },
+            title: {
+                text: 'Media Paling Efektif Untuk Menyampaikan Aspirasi'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.2f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Aksi',
+                    y: 17.05
+                }, {
+                    name: 'Diskusi degan pihak terkait',
+                    y: 51.64
+                }, {
+                    name: 'Petisi',
+                    y: 6.82
+                }, {
+                    name: 'Tulisan (Artikel, blog, status, dll)',
+                    y: 24.07
+                }, {
+                    name: 'Lainnya',
+                    y: 0.42
+                }]
+            }]
+        }); 		
+		$('#container4').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+						  enabled: false
+					  },
+            title: {
+                text: 'Aksi Merupakan Media Paling Efektif Menyampaikan Aspirasi'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.2f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sangat setuju',
+                    y: 9.52
+                }, {
+                    name: 'Setuju',
+                    y: 57.63
+                }, {
+                    name: 'Tidk setuju',
+                    y: 30.89
+                }, {
+                    name: 'Sangat tidak setuju',
+                    y: 1.95
+                }]
+            }]
+        }); 
+				
+$('#container5').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Keikutsertaan Mahasiswa IPB dalam Aksi'
+        },
+
+        xAxis: {
+            categories: ['Ya','Tidak' ],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: 0,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'S-1 (PPKU/Tingkat 1)',
+            data: [16.45, 83.55]
+        }, {
+            name: 'S-1 (Departemen/Di Atas Tingkat 1)',
+            data: [22.08, 77.92]
+
+        }, {
+            name: 'D-3 (Diploma)',
+            data: [17.75, 82.25]
+
+        }]
+    });
+	$('#container6').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+						  enabled: false
+					  },
+            title: {
+                text: 'Apakah Mahasiswa IPB Setuju dengan BEM KM Melakukan Aksi'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.2f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sangat setuju',
+                    y: 21.41
+                }, {
+                    name: 'Setuju',
+                    y: 65.24
+                }, {
+                    name: 'Tidak setuju',
+                    y: 12.22
+                }, {
+                    name: 'Sangat tidak setuju',
+                    y: 1.12
+            }]
+			}]
+        }); 
+    });
+});
+		</script>
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html"><img src="img/brand.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html#survei">Survei</a>
+                    </li>             
+                    <li>
+                        <a class="page-scroll" href="terkini.html">Terkini</a>
+                    </li>
+                    <li>
+                            <a class="page-scroll" href="database.html">Database</a>
+                        </li>
+                        <li>
+                                <a class="page-scroll" href="infografis.html">Infografis</a>
+                            </li>
+                    <li>
+                        <a class="page-scroll" href="godata.html"> GODATA</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="index.html#kategori">Kategori</a>
+                    </li>
+
+
+                    <li>
+                        <a class="page-scroll" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <section class="bg-custom" id="visimisi">
+        <div class="container">
+            <div class="row">
+            	<div class="col-lg-12 text-center">
+                    <br><h1 style="font-family: 'Rodondo';">AKSI</h1>					            
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+		
+		<div class="container">
+			<div class="row">
+                   <div class="col-lg-12"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div><div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+																		<!-- Modal -->
+																		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Pengetahuan Mahasiswa IPB mengenai Aksi dari BEM KM 2016</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+Berdasarkan grafik di atas, terlihat persentase paling banyak bahwa sebanyak 27,82% mengetahui Aksi Mengawal 2 Tahun Jokowi-JK, lalu disusul dengan pengetahuan mengenai Aksi Green Campus yang menempati persentasi kedua terbanyak dengan 25,64%.																				
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																	</div>
+                    <div id="container" style="min-width: 360px; height: 450px; max-width: 800px; margin: 0 auto"></div> 
+					</div>
+            </div>		 
+		</div>
+		<div class="container">
+			<div class="row">
+                   <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal1"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div>	<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+																		<!-- Modal -->
+																		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Alasan Mahasiswa IPB Tidak Ikut Aksi</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																								Berdasarkan grafik di atas dapat diketahui alasan-alasan mahasiswa IPB tidak mengikuti aksi sebanyak 48.02%  karena bentrok dengan jadwal akademik, 17.38%  karena izin orang tua, 17.05% karena malas, 17.05% malas, 5.41% karena kesehatan, 3.74% karena lokasi, 2.62% karena merasa aksi tidak efektif, 2.49% karena tidak berminat ikut aksi, 0.58% karena tidak tahu informasi mengenai aksi baik penyelenggaraan ataupun materi mengenai aksi, 0.46% karena belum ada kesempatan, 0.04% karena panas, 0.04% karena tidak pernah mengikuti aksi, 1.33% karena alasan lainnya, dan sisanya sebanyak 0.83% tidak memiliki alasan yang pasti.																					
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																	</div>
+                    <div id="container1" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+					</div>
+					<div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div>	<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+																		<!-- Modal -->
+																		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Media Publikasi yang Paling Efektif</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																									Berdasarkan grafik di atas sebanyak 55.59% mahasiswa IPB memilih media sosial sebagai media paling efektif dalam menyampaikan publikasi, 29.02% memilih sosialisasi secara langsung yang paling efektif, 7.28% memilih jarkoman pribadi yang paling efektif, kemudian 7.32% memilih media cetak/pamflet/brosur/spanduk/mading, dan sisanya 0.79% memilih hal lainnya.																					
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																	</div>
+                    <div id="container2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+					</div>
+            </div>		 
+		</div>
+			<div class="container">
+			<div class="row">
+                   <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal3"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div>	<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+																		<!-- Modal -->
+																		<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Media Paling Efektif Untuk Menyampaikan Aspirasi</h4>
+																					</div>
+																							<div class="modal-body">
+																							Berdasarkan grafik di atas sebanyak 51.64% mahasiswa IPB memilih diskusi dengan pihak terkait sebagai media paling efektif dalam menyampaikan aspirasi, 24.07% memilih tulisan (seperti artikel, blog, status, dll), 17.05% memilih aksi, 6.82% memilih petisi, dan sisanya 0.42% memilih media lainnya untuk menyampaikan apirasi.
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																	</div>
+                    <div id="container3" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+					</div>
+					<div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal4"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div>	<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+																		<!-- Modal -->
+																		<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Setujukah Aksi media paling efektif menyampaikan aspirasi ?</h4>
+																					</div>
+																							<div class="modal-body">
+																							Berdasarkan grafik di atas sebanyak 9.52% mahasiswa IPB sangat setuju dengan aksi sebagai media paling efektif dalam menyampaikan aspirasi, 57.63%  mengatakan setuju, 30.89% mengatakan tidak setuju, dan 1.95% mengatakan sangat tidak setuju.
+																</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																	</div>
+                    <div id="container4" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+					</div>
+            </div>		 
+		</div>	
+		<div class="container">
+			<div class="row">
+                   <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal5"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div>	<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+																		<!-- Modal -->
+																		<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Keikutsertaan Mahasiswa IPB dalam Aksi</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+Berdasarkan grafik di atas mahasiswa S-1 non PPKU sebanyak 22.08% sudah pernah mengikuti aksi sedangkan 77.92% lainnya belum pernah, kemudian mahasiswa S-1 PPKU sebanyak 16.45% sudah pernah mengikuti aksi sedangkan 83.55% lainnya belum pernah, dan mahasiswa D-3 (Diploma) sebanyak  17.75% sudah pernah mengikuti aksi sedangkan 82.25% lainnya belum pernah.																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																	</div>
+                    <div id="container5" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+					</div>
+					<div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal6"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div>	<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+																		<!-- Modal -->
+																		<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Apakah Mahasiswa IPB Setuju dengan BEM KM Melakukan Aksi</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+Berdasarkan grafik diatas sebanyak 21.41% mengatakan sangat setuju dengan BEM KM IPB melakukan aksi, 65.42% mengatakan setuju, 12.22% mengatakan tidak setuju, dan sebanyak 1.12% mengatakan sangat tidak setuju.																</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																	</div>
+                    <div id="container6" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+					</div>
+            </div>		 
+		</div>
+			
+			
+		
+
+		
+        <section id="contact" class=bg-dark style="padding-bottom: 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Hubungi kami</h2>
+        
+                        <h3>Seputar pertanyaan, kritik, dan saran silahkan menghubungi kami melalui kontak berikut:</h3>
+                    </div>
+                    <div class="col-lg-3  text-center">
+                        <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                        <h3>Bagus Rahmansyah Priyoadi (081235445996)</h3>
+                    </div>
+                    <div class="col-lg-3  text-center"><a href="https://www.instagram.com/go_data/" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-instagram fa-3x wow bounceIn"></i>
+                        <h3>@GO_DATA</h3></a>
+                    </div>
+                    <div class="col-lg-3 text-center"><a href="mailto:risbang.bemkmipb@gmail.com" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <h3>Riset dan Pengembangan</h3></a>
+                    </div>
+                    <div class="col-lg-3 text-center"><a href="godatateam.html" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-group fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <h3>GODATA TEAM</h3></a>
+                    </div>
+                
+                </div>
+                <br>
+                <div class="text-center text-faded">
+                    <h3>Dikelola Oleh Biro Riset & Pengembangan  | Kabinet Bara Muda BEM KM IPB 2018 </h3>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/exporting.js"></script>
+	<script src="js/drilldown.js"></script>
+	<script src="js/data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>

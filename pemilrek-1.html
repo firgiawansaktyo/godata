@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pengetahuan Mahasiswa IPB tentang Pemilrek 2017 | GODATA IPB</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		
+		<script type="text/javascript">
+$(function () {
+	$('#container').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+						  enabled: false
+					  },
+            title: {
+                text: 'Persentase Mahasiswa IPB yang Tahu Tentang Pemilrek (Juni 2017)'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sudah Tahu',
+                    y: 96
+                }, {
+                    name: 'Belum Tahu',
+                    y: 4
+                }]
+            }]
+        });
+			
+    $('#container1').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+                          enabled: false
+                      },
+            title: {
+                text: 'Persentase Mahasiswa IPB yang Tahu Suara Mahasiswa diwakili Presma IPB Sebagai MWA-UM'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sudah Tahu',
+                    y: 45
+                }, {
+                    name: 'Belum Tahu',
+                    y: 55
+                }]
+            }]
+        });
+
+    $('#container2').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+                          enabled: false
+                      },
+            title: {
+                text: 'Pandangan Mahasiswa tentang Keterlibatan Mahasiswa di Pemilrek'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Masih kurang seharusnya lebih dilibatkan lagi',
+                    y: 91
+                }, {
+                    name: 'Sudah Maksimal',
+                    y: 8
+                }, {
+                    name: 'Tidak Menjawab',
+                    y: 1
+                }]
+            }]
+        });
+
+	$('#container3').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Aspek yang Harus Menjadi Prioritas Rektor Baru'
+        },
+        xAxis: {
+            categories: [
+                'Kebijakan Penurunan UKT Smt. 9',
+				'Pembenahan Fasilitas Kampus',
+				'Pembenahan Birokrasi dan Pelayanan Kemahasiswaan',
+				'Kebijakan Green Campus'
+				
+            ],
+            crosshair: true
+			
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0,
+				showInLegend: false,
+				
+            }
+        },
+		credits: {
+      enabled: false
+  },
+        series: [{
+         
+             data: [37.3, 7.6, 32.7, 22.4]
+
+        }]
+    });
+			
+	
+});
+
+   
+
+
+		</script>
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html"><img src="img/brand.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html#survei">Survei</a>
+                    </li>             
+                    <li>
+                        <a class="page-scroll" href="terkini.html">Terkini</a>
+                    </li>
+                    <li>
+                            <a class="page-scroll" href="database.html">Database</a>
+                        </li>
+                        <li>
+                                <a class="page-scroll" href="infografis.html">Infografis</a>
+                            </li>
+                    <li>
+                        <a class="page-scroll" href="godata.html"> GODATA</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="index.html#kategori">Kategori</a>
+                    </li>
+
+
+                    <li>
+                        <a class="page-scroll" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <section class="bg-custom" id="visimisi">
+        <div class="container">
+            <div class="row">
+            	<div class="col-lg-12 text-center">
+                    <br><h1 style="font-family: 'Rodondo';">Pengetahuan Mahasiswa IPB tentang Pemilihan Rektor</h2>
+             
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="services">
+        <div class="container">
+
+        </div>
+        <div class="container">
+            <div class="row">
+
+                 
+
+                <div class="row">
+                <div class="col-lg-6">
+				<div class="panel-body">
+																															</div>
+														
+																
+                   <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+
+                <div class="col-lg-6">
+                <div class="panel-body">
+                                                                                                                            </div>
+                                                        
+                                                                
+                   <div id="container1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+
+                <div class="col-lg-6">
+				<div class="panel-body">
+																
+															</div>
+														
+																<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		
+                    <div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+            </div>
+                
+
+                <div class="col-lg-6">
+                <div class="panel-body">
+                                                                
+                                                            </div>
+                                                        
+                                                                <div class="panel-body">
+                                                                        <!-- Button trigger modal -->
+                                                                        
+                                                <!-- Modal -->
+                                                                        
+                    <div id="container3" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+            </div>
+
+               
+
+                   
+
+	    <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+				            <hr class="primary">
+						<section>
+						<div class="container">
+						</div>
+						<a class="btn btn-primary btn-lg-8 "  href="pdf/Survei Pemilihan Rektor.pdf" download="Survei Pemilihan Rektor.pdf"><i class="fa fa-download"></i>  Download PDF</a>
+						</section>
+							<hr class="primary">
+                </div>
+            </div>
+        </div>
+    </section>
+	
+        <section id="contact" class=bg-dark style="padding-bottom: 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Hubungi kami</h2>
+        
+                        <h3>Seputar pertanyaan, kritik, dan saran silahkan menghubungi kami melalui kontak berikut:</h3>
+                    </div>
+                    <div class="col-lg-3  text-center">
+                        <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                        <h3>Bagus Rahmansyah Priyoadi (081235445996)</h3>
+                    </div>
+                    <div class="col-lg-3  text-center"><a href="https://www.instagram.com/go_data/" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-instagram fa-3x wow bounceIn"></i>
+                        <h3>@GO_DATA</h3></a>
+                    </div>
+                    <div class="col-lg-3 text-center"><a href="mailto:risbang.bemkmipb@gmail.com" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <h3>Riset dan Pengembangan</h3></a>
+                    </div>
+                    <div class="col-lg-3 text-center"><a href="godatateam.html" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-group fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <h3>GODATA TEAM</h3></a>
+                    </div>
+                
+                </div>
+                <br>
+                <div class="text-center text-faded">
+                    <h3>Dikelola Oleh Biro Riset & Pengembangan  | Kabinet Bara Muda BEM KM IPB 2018 </h3>
+                </div>
+            </div>
+        </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/exporting.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>

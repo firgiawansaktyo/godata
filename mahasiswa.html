@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sub Mahasiswa-GODATAIPB</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+	
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		
+		<script type="text/javascript">
+$(function () {
+
+    $(document).ready(function () {
+
+        // Build the chart
+		
+$('#container').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Keikutsertaan dalam Organisasi'
+        },
+
+        xAxis: {
+            categories: ['Tidak','Ya' ],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: 0,
+            y: 150,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'S-1 (PPKU/Tingkat 1)',
+            data: [18.38, 81.62 ]
+        }, {
+            name: 'S-1 (Departemen/Di Atas Tingkat 1)',
+            data: [15.21, 84.79]
+
+        }, {
+            name: 'D-3 (Diploma)',
+            data: [29.69, 70.31]
+
+        }]
+    });
+	$('#container1').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+						  enabled: false
+					  },
+            title: {
+                text: 'Organisasi yang Diikuti Mahasiswa IPB'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.2f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Badan Eksekutif Mahasiswa (BEM)',
+                    y: 14.09
+                }, {
+                    name: 'Dewan Perwakilan Mahasiswa (DPM)',
+                    y: 1.58
+                }, {
+                    name: 'Himpunan Profesi (Himpro)',
+                    y: 19.05
+                }, {
+                    name: 'Komunitas',
+                    y: 9.49
+                }, {
+                    name: 'Unit Kegiatan Mahasiswa (UKM)',
+                    y: 25.44
+                }, {
+                    name: 'Organisasi Luar Kampus',
+                    y: 5.71
+                }, {
+                    name: 'Organisasi Mahasiswa Daerah (OMDA)',
+                    y: 20.72
+                }, {
+                    name: 'Tidak Menjawab',
+                    y: 0.26
+                }, {
+                    name: 'Lainnya',
+                    y: 3.55
+                }]
+            }]
+        });       
+	      
+	       
+$('#container2').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Jenis Tempat Tinggal di Bogor'
+        },
+
+        xAxis: {
+            categories: ['Rumah sendiri','Rumah saudara', 'kost/kontrakan','Asrama'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: 0,
+            y: 120,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'S-1 (PPKU/Tingkat 1)',
+            data: [2.56, 0.43, 1.92, 95.09 ]
+        }, {
+            name: 'S-1 (Departemen/Di Atas Tingkat 1)',
+            data: [10.71, 1.16, 83.52,4.62]
+
+        }, {
+            name: 'D-3 (Diploma)',
+            data: [24.57, 3.41, 68.94, 3.07]
+
+        }]
+    });	 
+ 
+	       
+	
+	$('#container3').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Waktu belajar (di luar jam perkuliahan) yang ideal'
+        },
+
+        xAxis: {
+            categories: ['21,00-00.00','18.00-21.00','15.00-18.00','06.00-09.00','00.00-03.00'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: 0,
+            y: 150,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'S-1 (PPKU/Tingkat 1)',
+            data: [30.77, 40.17, 3.21, 3.63, 17.31, 4.91]
+        }, {
+            name: 'S-1 (Departemen/Di Atas Tingkat 1)',
+            data: [39.66, 29.44, 0.91, 3.35, 19.16, 7.48]
+
+        }, {
+            name: 'D-3 (Diploma)',
+            data: [25.26, 43.69, 2.05, 3.75, 18.43, 6.83]
+
+        }]
+    });
+	$('#container4').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Tipe Belajar yang Paling Dominan'
+        },
+
+        xAxis: {
+            categories: ['Visual (melalui penglihatan)','Kinestetik (melalui gerak, emosi, dan sentuhan)','Auditori (melalui pendengaran'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -70,
+            y: 60,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'S-1 (PPKU/Tingkat 1)',
+            data: [60.90, 23.29, 15.81]
+        }, {
+            name: 'S-1 (Departemen/Di Atas Tingkat 1)',
+            data: [59.12, 23.30, 17.58]
+
+        }, {
+            name: 'D-3 (Diploma)',
+            data: [59.04, 23.55, 17.41]
+
+        }]
+    });		
+	$('#container5').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Jam (Biasanya) Tidur Malam'
+        },
+
+        xAxis: {
+            categories: ['<21.00','21.00-23.00','23.00-01.00','>01.00'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 40,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'S-1 (PPKU/Tingkat 1)',
+            data: [4.06, 52.78, 38.03, 5.13]
+        }, {
+            name: 'S-1 (Departemen/Di Atas Tingkat 1)',
+            data: [1.89, 35.71, 52.49, 9.91]
+
+        }, {
+            name: 'D-3 (Diploma)',
+            data: [3.07, 54.27, 35.15, 7.51]
+
+        }]
+    });	
+	$('#container6').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Status Hubungan Mahasiswa IPB'
+        },
+
+        xAxis: {
+            categories: ['Tidak single','Single' ],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 150,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Perempuan',
+            data: [14.05, 85.95 ]
+        }, {
+            name: 'Laki-laki',
+            data: [16.44, 83.56]
+
+        }]
+    });	
+	$('#container7').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Pengguna Kacamata'
+        },
+
+        xAxis: {
+            categories: ['Ya','Tidak' ],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 150,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Perempuan',
+            data: [50.14, 49.86]
+        }, {
+            name: 'Laki-laki',
+            data: [39.92, 60.08]
+
+        }]
+    });
+	
+		
+    });
+});
+		</script>
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html"><img src="img/brand.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html#survei">Survei</a>
+                    </li>             
+                    <li>
+                        <a class="page-scroll" href="terkini.html">Terkini</a>
+                    </li>
+                    <li>
+                            <a class="page-scroll" href="database.html">Database</a>
+                        </li>
+                        <li>
+                                <a class="page-scroll" href="infografis.html">Infografis</a>
+                            </li>
+                    <li>
+                        <a class="page-scroll" href="godata.html"> GODATA</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="index.html#kategori">Kategori</a>
+                    </li>
+
+
+                    <li>
+                        <a class="page-scroll" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <section class="bg-custom" id="visimisi">
+        <div class="container">
+            <div class="row">
+            	<div class="col-lg-12 text-center">
+                    <br><h1 style="font-family: 'Rodondo';">MAHASISWA</h1>					            
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+		
+		<div class="container">
+			<div class="row">
+                   <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div>	<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+																		<!-- Modal -->
+																		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Keikutsertaan dalam Organisasi</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																							Berdasarkan grafik di atas mahasiswa S-1 non PPKU sebanyak 84.79% mengikuti organisasi sedangkan 15.21% lainnya tidak mengikuti organisasi, kemudian mahasiswa S-1 PPKU sebanyak 81.62% mengikuti organisasi sedangkan 18.38% lainnya tidak mengikuti organisasi, dan mahasiswa D-3 (Diploma) sebanyak 70.31% mengikuti organisasi sedangkan 29.69% lainnya tidak mengikuti.																					
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																	</div>
+                      <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+					</div>
+					  <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div>
+						<div id="container1" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+				
+					</div>
+                </div>
+            </div>
+		</div>
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div><div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+																		<!-- Modal -->
+																		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Jenis tempat tinggal</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+Grafik ini menunjukkan persebaran jenis tempat tinggal yang ditempati oleh mahasiswa IPB selama berkuliah di Kampus IPB																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																	</div>
+                    <div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+				<div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal3"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div>																<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">waktu belajar (di luar jam perkuliahan) yang ideal</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																							Grafik ini menunjukkan waktu belajar yang ideal dan efektif bagi mahasiswa IPB<br>																					
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>	
+                    <div id="container3" style="min-width: 310px; max-width: 600px; height: 400px; margin: 0 auto"></div>
+                </div>
+				</div>
+            </div>
+        </div>
+		
+		<div class="container">
+            <div class="row">
+                <div class="row">
+                <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal4"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div><div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Tipe belajar Anda yang paling dominan?</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																							Grafik ini menunjukkan tipe belajar mahasiswa IPB yang paling dominan untuk menyesuaikan dengan cara belajar mereka																				
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>	
+                    <div id="container4" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+				<div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal5"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div><div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Pada pukul berapa Anda biasa tidur malam?</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																						Grafik ini menunjukkan waktu tidur mahasiswa IPB pada malam hari, dan menunjukkan bahwa sebagian besar mahasiswa IPB tidur pada larut malam.																		
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>
+                    <div id="container5" style="min-width: 310px; max-width: 600px; height: 400px; margin: 0 auto"></div>
+                </div>
+				</div>
+            </div>
+        </div>
+	<div class="container">
+            <div class="row">
+                <div class="row">
+                <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal6"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div>	<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+																		<!-- Modal -->
+																		<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Status Hubungan Mahasiswa IPB</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																								Berdasarkan grafik di atas sebanyak 85.95% mahasiswa IPB Perempuan mempunyai status hubungan single sedangkan sisanya 14.05% tidak single, dan sebanyak 83.56% mahasiswa IPB Laki-laki mempunyai status hubungan single sedangkan sisanya 16.44% tidak single.																					
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																	</div>
+                    <div id="container6" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+				<div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal7"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div>	<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+																		<!-- Modal -->
+																		<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Pengguna Kacamata</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+Berdasarkan grafik di atas sebanyak 50.14% mahasiswa IPB perempuan menggunakan kacamata sedangkan sisanya 49.86% tidak menggunakan, dan sebanyak 39.92% mahasiswa IPB laki-laki menggunakan kacamata sedangka sisanya 60.08% tidak menggunakan.																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																	</div>
+                    <div id="container7" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+            </div>
+        </div></div>	
+
+	
+
+	
+	
+        <section id="contact" class=bg-dark style="padding-bottom: 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Hubungi kami</h2>
+        
+                        <h3>Seputar pertanyaan, kritik, dan saran silahkan menghubungi kami melalui kontak berikut:</h3>
+                    </div>
+                    <div class="col-lg-3  text-center">
+                        <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                        <h3>Bagus Rahmansyah Priyoadi (081235445996)</h3>
+                    </div>
+                    <div class="col-lg-3  text-center"><a href="https://www.instagram.com/go_data/" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-instagram fa-3x wow bounceIn"></i>
+                        <h3>@GO_DATA</h3></a>
+                    </div>
+                    <div class="col-lg-3 text-center"><a href="mailto:risbang.bemkmipb@gmail.com" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <h3>Riset dan Pengembangan</h3></a>
+                    </div>
+                    <div class="col-lg-3 text-center"><a href="godatateam.html" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-group fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <h3>GODATA TEAM</h3></a>
+                    </div>
+                
+                </div>
+                <br>
+                <div class="text-center text-faded">
+                    <h3>Dikelola Oleh Biro Riset & Pengembangan  | Kabinet Bara Muda BEM KM IPB 2018 </h3>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/exporting.js"></script>
+	<script src="js/drilldown.js"></script>
+	<script src="js/data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>

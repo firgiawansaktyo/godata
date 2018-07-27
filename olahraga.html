@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sub Olahraga-GODATAIPB</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+	
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		
+		<script type="text/javascript">
+$(function () {
+
+    $(document).ready(function () {
+
+        // Build the chart
+		
+	$('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Keikutsertaan Mahasiswa IPB pada Kompetisi Olahraga'
+        },
+        subtitle: {
+            text: ''
+        },
+        xAxis: {
+            categories: [
+                'D3-(Diploma)',
+                'S-1 (PPKU/Tingkat 1)',
+				'S-1 (Departemen/Di atas tingkat 1)'				
+            ],
+            crosshair: true
+			
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.2f} %</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0,
+				showInLegend: false,
+				
+            }
+        },
+		credits: {
+      enabled: false
+  },
+        series: [ {
+         name: 'Ya',
+            data: [41.64, 36.54, 51.28 ]
+
+        },{
+         name: 'Tidak',
+            data: [58.36, 63.46, 48.72]
+
+        }]
+    });
+$('#container1').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+						  enabled: false
+					  },
+            title: {
+                text: 'Minat Olahraga Mahasiswa IPB'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Olahraga bola besar (Sepakbola, futsal, basket, voli, dll)',
+                    y: 32.14
+                }, {
+                    name: 'Olhraga bola kecil (Tenis, pingpong, baseball, softball, dll)',
+                    y: 4.62
+                }, {
+                    name: 'Atletik',
+                    y: 9.40
+                }, {
+                    name: 'Renang',
+                    y: 13.76
+                }, {
+                    name: 'Bulu tangkis',
+                    y: 21.66
+                }, {
+                    name: 'Beladiri (Pencak silat, karate, wushu, taekwondo, dll)',
+                    y: 7.78
+                }, {
+                    name: 'catur',
+                    y: 3.49
+                }, {
+                    name: 'Lainnya',
+                    y: 6.20
+                }, {
+                    name: 'Tidak menjawab',
+                    y: 0.25
+                }, {
+                    name: 'Tidak minat olahraga',
+                    y: 0.71
+                }]
+            }]
+        });	
+    });
+});
+		</script>
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html"><img src="img/brand.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html#survei">Survei</a>
+                    </li>             
+                    <li>
+                        <a class="page-scroll" href="terkini.html">Terkini</a>
+                    </li>
+                    <li>
+                            <a class="page-scroll" href="database.html">Database</a>
+                        </li>
+                        <li>
+                                <a class="page-scroll" href="infografis.html">Infografis</a>
+                            </li>
+                    <li>
+                        <a class="page-scroll" href="godata.html"> GODATA</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="index.html#kategori">Kategori</a>
+                    </li>
+
+
+                    <li>
+                        <a class="page-scroll" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+	 
+    <section class="bg-custom" id="visimisi">
+        <div class="container">
+            <div class="row">
+            	<div class="col-lg-12 text-center">
+                    <br><h1 style="font-family: 'Rodondo';">OLAHRAGA</h1>					            
+                </div>
+            </div>
+        </div>
+    </section>
+    
+                <!-- /.col-lg-12 -->
+
+
+		
+		<div class="container">
+			<div class="row">
+                   <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div><div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Keikutsertaan mahasiswa IPB pada kompetisi olahraga</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																						Grafik di atas menunjukkan keikutsertaan mahasiswa IPB pada kompetisi olahraga. Terlihat persentase terbanyak terdapat pada mahasiswa S-1 di atas tingkat 1 yang memiliki keikutsertaan terbanyak.																		
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>
+                    <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+					</div>
+					  <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal1"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div><div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Minat olahraga mahasiswa IPB</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+Berikut ditampilkan persentase minat olahraga mahasiswa IPB. Terdapat 5 minat di antaranya Olahraga Bola Besar, Olahraga Bola Kecil, Atletik, Renang, dan Bulutangkis. Persentase tertinggi terdapat pada Olahrag Besar dengan persentase mencapai 32,14%.																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>
+					<div id="container1" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+					</div>
+                </div>
+         </div>	
+		 
+         <section id="contact" class=bg-dark style="padding-bottom: 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Hubungi kami</h2>
+        
+                        <h3>Seputar pertanyaan, kritik, dan saran silahkan menghubungi kami melalui kontak berikut:</h3>
+                    </div>
+                    <div class="col-lg-3  text-center">
+                        <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                        <h3>Bagus Rahmansyah Priyoadi (081235445996)</h3>
+                    </div>
+                    <div class="col-lg-3  text-center"><a href="https://www.instagram.com/go_data/" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-instagram fa-3x wow bounceIn"></i>
+                        <h3>@GO_DATA</h3></a>
+                    </div>
+                    <div class="col-lg-3 text-center"><a href="mailto:risbang.bemkmipb@gmail.com" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <h3>Riset dan Pengembangan</h3></a>
+                    </div>
+                    <div class="col-lg-3 text-center"><a href="godatateam.html" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-group fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <h3>GODATA TEAM</h3></a>
+                    </div>
+                
+                </div>
+                <br>
+                <div class="text-center text-faded">
+                    <h3>Dikelola Oleh Biro Riset & Pengembangan  | Kabinet Bara Muda BEM KM IPB 2018 </h3>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/exporting.js"></script>
+	<script src="js/drilldown.js"></script>
+	<script src="js/data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>

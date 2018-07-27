@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sub Aktivitas-GODATAIPB</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+	
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		
+		<script type="text/javascript">
+$(function () {
+
+    $(document).ready(function () {
+
+        // Build the chart
+		
+$('#container').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Mobilitas Luar Negeri'
+        },
+
+        xAxis: {
+            categories: ['Sudah pernah','Belum pernah' ],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 150,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'S-1 (PPKU/Tingkat 1)',
+            data: [16.24, 83.76 ]
+        }, {
+            name: 'S-1 (Departemen/Di Atas Tingkat 1)',
+            data: [22.14, 77.86]
+
+        }, {
+            name: 'D-3 (Diploma)',
+            data: [13.31, 86.69]
+
+        }]
+    });
+		        $('#container1').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+						  enabled: false
+					  },
+            title: {
+                text: 'Keperluan Ke Luar Negeri'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.2f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Academic visit',
+                    y: 6.26
+                }, {
+                    name: 'Ibadah',
+                    y: 5.01
+                }, {
+                    name: 'Ikut orang tua',
+                    y: 1.88
+                }, {
+                    name: 'Kompetisi',
+                    y: 7.31
+                }, {
+                    name: 'Konferensi/Simposium/Seminar',
+                    y: 10.86
+                }, {
+                    name: 'Liburan',
+                    y: 52.82
+                }, {
+                    name: 'Student exchange',
+                    y: 12.94
+                }, {
+                    name: 'Lainnya',
+                    y: 1.67
+                }, {
+                    name: 'Tidak menjawab',
+                    y: 1.25
+                }]
+            }]
+        }); 		
+$('#container2').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Menjuarai Suatu Kompetisi'
+        },
+
+        xAxis: {
+            categories: ['Sudah pernah','Belum pernah' ],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 155,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'S-1 (PPKU/Tingkat 1)',
+            data: [63.46, 36.54 ]
+        }, {
+            name: 'S-1 (Departemen/Di Atas Tingkat 1)',
+            data: [56.27, 43.73]
+
+        }, {
+            name: 'D-3 (Diploma)',
+            data: [54.61, 45.39]
+
+        }]
+    });
+	$('#container3').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Tempat Kumpul Favorite'
+        },
+
+        xAxis: {
+            categories: ['Luar kampus','Dalam kampus' ],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 155,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'S-1 (PPKU/Tingkat 1)',
+            data: [16.67, 83.33]
+        }, {
+            name: 'S-1 (Departemen/Di Atas Tingkat 1)',
+            data: [36.56, 63.44]
+
+        }, {
+            name: 'D-3 (Diploma)',
+            data: [63.48, 36.52]
+
+        }]
+    });
+	 $('#container4').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Jenis Media Sosial Favorit untuk Hiburan'
+        },
+        xAxis: {
+            categories: [
+			'facebook',
+			'Instagram',
+            'LINE',
+			'Path',
+			'Pinterest',
+			'Snapchat',
+			'Tumblr',
+			'Twitter',
+			'Youtube',
+         	'lain-lain',
+			'Tidak ada',
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persen (%)'
+            }
+        },
+		    legend: {
+    enabled:false,
+        layout: 'vertical',
+        backgroundColor: '#FFFFFF',
+        align: 'left',
+        verticalAlign: 'top',
+        x: 50,
+        y: 30,
+        floating: true,
+        shadow: true
+    },
+credits: {
+        enabled: false
+    },
+		
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.2f} %</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Jumlah',
+            data: [5.57, 66.24, 0.42, 0.87, 0.21, 1.66, 0.12, 1.29, 22.83, 0.58, 0.21]
+
+        }]
+    }); 
+	$('#container5').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Jenis Media Sosial Favorit untuk Chatting'
+        },
+        xAxis: {
+            categories: [
+			'BBM',
+			'Facebook messenger',
+			'Instagram (DM)',
+			'LINE',
+			'Whatsapp',
+			'Lainnya',
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persen (%)'
+            }
+        },
+		    legend: {
+    enabled:false,
+        layout: 'vertical',
+        backgroundColor: '#FFFFFF',
+        align: 'left',
+        verticalAlign: 'top',
+        x: 50,
+        y: 30,
+        floating: true,
+        shadow: true
+    },
+credits: {
+        enabled: false
+    },
+		
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.2f} %</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Jumlah',
+            data: [0.12, 0.17, 0.29, 85.61, 13.64, 0.17]
+
+        }]
+    });
+	
+$('#container6').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+						  enabled: false
+					  },
+            title: {
+                text: 'Juara Kompetisi yang Pernah Diraih Mahasiswa IPB'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.2f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Agama',
+                    y: 0.79
+                }, {
+                    name: 'Akademik',
+                    y: 29.76
+                }, {
+                    name: 'Debat',
+                    y: 3.35
+                }, {
+                    name: 'Ekstrakulikuler',
+                    y: 1.50
+                }, {
+                    name: 'Kewirausahaan',
+                    y: 0.86
+                }, {
+                    name: 'Lainnya',
+                    y: 1.36
+                }, {
+                    name: 'Menulis',
+                    y: 9.92
+                }, {
+                    name: 'Olahraga',
+                    y: 24.05
+                }, {
+                    name: 'Photografi',
+                    y: 0.43
+                }, {
+                    name: 'Public speaking',
+                    y: 0.71
+                }, {
+                    name: 'Robotik',
+                    y: 0.36
+                }, {
+                    name: 'Seni',
+                    y: 26.12
+                }, {
+                    name: 'Tidak menjawab',
+                    y: 0.79
+                }]
+            }]
+        }); 
+    });
+});
+		</script>
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html"><img src="img/brand.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html#survei">Survei</a>
+                    </li>             
+                    <li>
+                        <a class="page-scroll" href="terkini.html">Terkini</a>
+                    </li>
+                    <li>
+                            <a class="page-scroll" href="database.html">Database</a>
+                        </li>
+                        <li>
+                                <a class="page-scroll" href="infografis.html">Infografis</a>
+                            </li>
+                    <li>
+                        <a class="page-scroll" href="godata.html"> GODATA</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="index.html#kategori">Kategori</a>
+                    </li>
+
+
+                    <li>
+                        <a class="page-scroll" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+	 
+    <section class="bg-custom" id="visimisi">
+        <div class="container">
+            <div class="row">
+            	<div class="col-lg-12 text-center">
+                    <br><h1 style="font-family: 'Rodondo';">AKTIVIS</h1>					            
+                </div>
+            </div>
+        </div>
+    </section>
+    
+                <!-- /.col-lg-12 -->
+
+
+		
+		<div class="container">
+			<div class="row">
+                   <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div>																<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Pernahkah Mahasiswa Ke Luar Negeri ?</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																								Berdasarkan grafik di atas mahasiswa S-1 non PPKU sebanyak 77.86% sudah pernah pergi ke luar negeri sedangkan 22.14% lainnya belum pernah, kemudian mahasiswa S-1 PPKU sebanyak 83.76% sudah pernah pergi ke luar negeri sedangkan 16.24% lainnya belum pernah, dan mahasiswa D-3 (Diploma) sebanyak 86.69% sudah pernah pergi ke luar negeri sedangkan 13.31% lainnya belum pernah.																					
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>	
+                    <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+					</div>
+					  <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal1"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div>	<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+																		<!-- Modal -->
+																		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Keperluan Ke Luar Negeri</h4>
+																					</div>
+																							<div class="modal-body">
+																							Berdasarkan grafik di atas sebanyak 58.82% mahasiswa IPB keluar negeri untuk keperluan liburan, 12.94% untuk student exchange, 10.86% untuk konferensi/simposium/seminar, 7.31% untuk mengikuti kompetisi, 6,26% untuk academic visit, 5.01% untuk ibadah, 1.88% karena mengikuti orang tua seperti dinas, kemudian 1.67% untuk keperluan lainnya, dan sisanya sebanyak 1.25% sudah pernah keluar negeri tetapi tidak diketahui keperluannya.																					
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																	</div>
+					<div id="container1" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+					</div>
+                </div>
+         </div>	
+		 
+		 <div class="container">
+			<div class="row">
+                   <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div>	<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+																		<!-- Modal -->
+																		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Menjuarai suatu kompetisi</h4>
+																					</div>
+																							<div class="modal-body">
+Grafik ini menunjukan bahwa mahasiswa PPKU lebih banyak menjuarai suatu kompetisi dibandingkan dengan responden S1 diatas tingkat 1 dan diploma																						</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																	</div>
+                    <div id="container2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+					</div>
+					  <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal3"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div>
+															<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+																		<!-- Modal -->
+																		<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Tempat kumpul favorit</h4>
+																					</div>
+																							<div class="modal-body">
+Grafik ini menunjukkan kecenderungan tempat kumpul yang sering menjadi tempat “nongkrong” bagi mahasiswa IPB																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																	</div>
+					<div id="container3" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+					</div>
+                </div>
+         </div>
+		 <div class="container">
+			<div class="row">
+                   <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal4"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div><div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Media Hiburan Favorite</h4>
+																					</div>
+																							<div class="modal-body">
+																							Grafik ini menunjukkan media sosial yang paling disenangi oleh mahasiswa IPB sebagai hiburan yang dapat meningkatkan mood mahasiswa IPB																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>	
+                    <div id="container4" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+					</div>
+					  <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal5"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div>																<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Media Sosial Chatting Favorite</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																									Grafik ini menunjukkan media sosial yang paling disenangi oleh mahasiswa IPB untuk chatting/mengobrol dengan teman secara jarak jauh																					
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>	
+					<div id="container5" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+					</div>
+                </div>
+         </div> 
+		 <div class="container">
+			<div class="row">
+                   <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal6"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div>	<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+																		<!-- Modal -->
+																		<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Juara Kompetisi yang Pernah Diraih Mahasiswa IPB</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																									Berdasarkan grafik di atas dapat dilihat bidang-bidang kompetisi yang pernah dijuarai oleh mahasiswa IPB, yaitu 29.76% juara kompetisi pada bidang akademik, 26.12% juara kompetisi pada bidang seni, 24.05% juara kompetisi pada bidang olahraga, 9.92% pada bidang menulis, 3.35% juara kompetisi pada bidang debat, 1.50% juara kompetisi pada bidang ekstrakurikuler (PMR, PASKIBRAKA, dll), 0.89% juara kompetisi pada bidang kewirausahaan, 0.79% juara kompetisi pada bidang agama, 0.71% juara kompetisi pada bidang public speaking, 0,49% juara kompetisi pada bidang photografi, 0.36% juara kompetisi pada bidang robotik, 1.36% juara kompetisi pada bidang lainnya dan sisanya juara kompetisi yang pernah diraih tetapi tidak disebutkan bidang kompetisi tersebut. 																					
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																	</div>
+                    <div id="container6" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+					</div>
+					  <div class="col-lg-6"><div class="panel-body">
+
+					<div id="container7" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+					</div>
+                </div>
+         </div>   
+		 </div>
+
+		
+
+
+		
+         <section id="contact" class=bg-dark style="padding-bottom: 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Hubungi kami</h2>
+        
+                        <h3>Seputar pertanyaan, kritik, dan saran silahkan menghubungi kami melalui kontak berikut:</h3>
+                    </div>
+                    <div class="col-lg-3  text-center">
+                        <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                        <h3>Bagus Rahmansyah Priyoadi (081235445996)</h3>
+                    </div>
+                    <div class="col-lg-3  text-center"><a href="https://www.instagram.com/go_data/" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-instagram fa-3x wow bounceIn"></i>
+                        <h3>@GO_DATA</h3></a>
+                    </div>
+                    <div class="col-lg-3 text-center"><a href="mailto:risbang.bemkmipb@gmail.com" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <h3>Riset dan Pengembangan</h3></a>
+                    </div>
+                    <div class="col-lg-3 text-center"><a href="godatateam.html" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-group fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <h3>GODATA TEAM</h3></a>
+                    </div>
+                
+                </div>
+                <br>
+                <div class="text-center text-faded">
+                    <h3>Dikelola Oleh Biro Riset & Pengembangan  | Kabinet Bara Muda BEM KM IPB 2018 </h3>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/exporting.js"></script>
+	<script src="js/drilldown.js"></script>
+	<script src="js/data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>

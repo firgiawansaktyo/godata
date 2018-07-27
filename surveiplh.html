@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Survei Pertanian dan Lingkungan Hidup</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+	<link href="css/animate.css" rel="stylesheet" type="text/css" >
+	<link href="css/custom.css" rel="stylesheet" type="text/css" >
+	<link href="css/style.css" rel="stylesheet" type="text/css" >
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+		<style type="text/css">
+	${demo.css}
+		</style>
+		
+		<script type="text/javascript">
+$(function () {
+
+    $(document).ready(function () {
+
+        // Build the chart
+				
+	    
+$('#container3').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Pendapat Mahasiswa tentang Penyebab Kurang Diminatinya Dunia Pertanian'
+        },
+        xAxis: {
+            categories: [
+                'Dipandang sebagai profesi yang kurang keren',
+                'Kurang menjanjikan',
+                'Kurang paham mengenai peluang bisnis di bidang pertanian',
+				'lainnya',
+				],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Presentase'
+            }
+        },
+		    legend: {
+    enabled:false,
+        layout: 'vertical',
+        backgroundColor: '#FFFFFF',
+        align: 'left',
+        verticalAlign: 'top',
+        x: 20,
+        y: 30,
+        floating: true,
+        shadow: true
+    },
+credits: {
+        enabled: false
+    },
+		
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.0f} %</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Jumlah',
+            data: [33, 27, 37, 2]
+
+        }]
+    });
+	
+$('#container4').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Persentase Mahasiswa yang Berminat Terjun ke Dunia Petanian dalam Arti Luas'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Berminat',
+                    y: 79
+                }, {
+                    name: 'Tidak',
+                    y: 21
+                }]
+            }]
+        });
+		
+		$('#container5').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Persentase Mahasiswa yang Yakin Indonesia Bisa Mewujudkan Swasembada Pangan'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Yakin',
+                    y: 91
+                }, {
+                    name: 'Tidak',
+                    y: 9
+                }]
+            }]
+        });
+		
+		$('#container6').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Frekuensi Mahasiswa dalam Menggunakan Tumbler'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Tidak Pernah',
+                    y: 20
+                }, {
+                    name: 'Jarang',
+                    y: 24
+                },{
+                    name: 'Sering',
+                    y: 32
+                },{
+                    name: 'Selalu',
+                    y: 24
+                }]
+            }]
+        });
+		
+		$('#container7').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Rata-rata Minuman Kemasan Botol Plastik yang Dibeli Mahasiswa dalam Sehari'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: '0',
+                    y: 45
+                }, {
+                    name: '1-2',
+                    y: 53
+                },{
+                    name: '3-4',
+                    y: 1
+                },{
+                    name: '>=5',
+                    y: 1
+                }]
+            }]
+        });
+		
+		$('#container8').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Frekuensi Mahasiswa dalam Menggunakan Ecobag saat Berbelanja'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Tidak Pernah',
+                    y: 21
+                }, {
+                    name: 'Jarang',
+                    y: 54
+                },{
+                    name: 'Sering',
+                    y: 24
+                },{
+                    name: 'Selalu',
+                    y: 1
+                }]
+            }]
+        });
+
+		
+$('#container9').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Rata-rata Penggunaan Kantong Plastik oleh Mahasiswa dalam Sehari'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: '0',
+                    y: 12
+                }, {
+                    name: '1-2',
+                    y: 71
+                },{
+                    name: '3-4',
+                    y: 15
+                },{
+                    name: '>=5',
+                    y: 2
+                }]
+            }]
+        });
+		
+		
+		
+		$('#container10').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Pelaksanaan dalam Membuang Sampah pada Tempatnya'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Tidak Pernah',
+                    y: 1
+                }, {
+                    name: 'Sering',
+                    y: 33
+                },{
+                    name: 'Selalu',
+                    y: 66
+                }]
+            }]
+        });
+
+		
+    });
+});
+		</script>
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+		
+        
+		
+
+</head>
+
+<body id="page-top">
+
+   <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html"><img src="img/brand.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html#survei">Survei</a>
+                    </li>             
+                    <li>
+                        <a class="page-scroll" href="terkini.html">Terkini</a>
+                    </li>
+                    <li>
+                            <a class="page-scroll" href="database.html">Database</a>
+                        </li>
+                        <li>
+                                <a class="page-scroll" href="infografis.html">Infografis</a>
+                            </li>
+                    <li>
+                        <a class="page-scroll" href="godata.html"> GODATA</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="index.html#kategori">Kategori</a>
+                    </li>
+
+
+                    <li>
+                        <a class="page-scroll" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        <!-- /.container-fluid -->
+    </nav>
+	
+    <section class="bg-custom" id="visimisi">
+        <div class="container">
+            <div class="row">
+            	<div class="col-lg-12 text-center">
+                    <br><h1 style="font-family: 'Rodondo';">Survei Pertanian dan Lingkungan Hidup</h2>
+             
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	
+	   <!-- /.col-lg-12 -->
+          
+		<section>
+		<div class="container">
+		<div id="page-wrapper">
+           
+            
+                <!-- /.col-lg-6 -->
+				
+                <div class="col-lg-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                        <h4> Survei PLH</h4>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="#deskripsi1" style="font-size: 14px; padding: 3px;" class="btn btn-outline btn-default btn-lg" data-toggle="tab">Deskripsi</a>
+                                </li>
+                                <li><a href="#metode1" style="font-size: 14px; padding: 3px;" class="btn btn-outline btn-default btn-lg" data-toggle="tab">Metode</a>
+                                </li>
+                                <li><a href="#jumlahresponden1" style="font-size: 14px; padding: 3px;" class="btn btn-outline btn-default btn-lg" data-toggle="tab">Jumlah responden</a>
+                                </li>
+                                
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="deskripsi1">
+                                  
+                                    <p>Survei Pertanian dan Lingkungan Hidup merupakan survei yang dilakukan oleh Biro Riset dan Pengembangan dan Kementrian Pertanian dan Lingkungan Hidup BEM KM IPB. Survei ini bertujuan untuk mengetahui preferensi mahasiswa IPB terhadap pertanian dan green movement yang dilakukan mahasiswa. </p>
+                                </div>
+                                
+                <!-- /.col-lg-12 -->
+				<div class="tab-pane fade" id="metode1">
+                                
+<p>Metode penarikan contoh yang digunakan adalah probability sampling.Artinya, setiap orang terpilih secara acak atau memiliki peluang yang sama untuk terpilih. Penentuan contohnya adalah dengan menggunakan metode penarikan contoh acak sederhana (Simple Random Sampling) dengan bound of error 10%</p>
+                                </div>
+                                <div class="tab-pane fade" id="jumlahresponden1">
+                                 
+                                    <p>Survei ini mengambil responden mahasiswa IPB S1 dan D3, dengan total responden 138 orang.</p>
+                                </div>
+			
+								
+								
+								 <ul class="nav nav-pills">
+                                <li>
+                        <a style="font-size: 14px; padding: 3px;" class="page-scroll btn btn-success btn-xl wow tada" href="#pertanian">Pertanian</a>
+                    </li>
+								<li>
+                        <a style="font-size: 14px; padding: 3px;" class="page-scroll btn btn-success btn-xl wow tada" href="#lingkunganhidup">Lingkungan Hidup</a>
+                    </li>
+					<li>
+                        <a style="font-size: 14px; padding: 3px;" class="page-scroll btn btn-success btn-xl wow tada" href="infografisplh.html">Infografis</a>
+                    </li>
+					
+					
+								</ul>
+                            </div>
+          
+
+           
+            <section id="pertanian">
+                <div class="container">
+				<a style="font-size: 18px; padding: 3px;" class="btn btn-outline btn-default btn-lg">Pertanian</a>
+            <div class="row">
+                <div class="row">
+                <div class="col-lg-10"><div class="panel-body">
+																
+															</div>
+                    <div id="container3" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+                </div>
+ </div>
+  </div>
+   </div>
+		
+		 <div class="container">
+            <div class="row">
+                <div class="row">
+                <div class="col-lg-10"><div class="panel-body">
+																
+															</div>
+                    <div id="container4" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+                </div>
+ </div>
+  </div>
+   </div>
+		      <div class="container">
+            <div class="row">
+                <div class="row">
+                <div class="col-lg-10"><div class="panel-body">
+															
+															</div>
+                     <div id="container5" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+                </div>
+				</div>
+            </div>
+        </div>
+		</section>
+		<br>
+		</br>
+				
+                <section id="lingkunganhidup">
+                <div class="container">
+				<a style="font-size: 18px; padding: 3px;" class="btn btn-outline btn-default btn-lg">Lingkungan Hidup</a>
+            <div class="row">
+                <div class="row">
+                <div class="col-lg-10"><div class="panel-body">
+																
+															</div>
+                    <div id="container6" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+                </div>
+				<div class="col-lg-10"><div class="panel-body">
+																
+															</div>
+                    <div id="container7" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+                </div>
+				<div class="col-lg-10"><div class="panel-body">
+																
+															</div>
+                    <div id="container8" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+                </div>
+				<div class="col-lg-10"><div class="panel-body">
+																
+															</div>
+                    <div id="container9" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+                </div>
+				<div class="col-lg-10"><div class="panel-body">
+																
+															</div>
+                    <div id="container10" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+                </div>
+ </div>
+  </div>
+   </div>
+		
+   
+   </div>
+  </div>
+   </div>
+   
+		</div>
+  </div>
+   </div>
+		
+		
+		
+		
+		</section>
+
+	
+        <!-- /#page-wrapper -->
+        <section id="contact" class=bg-dark style="padding-bottom: 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Hubungi kami</h2>
+        
+                        <h3>Seputar pertanyaan, kritik, dan saran silahkan menghubungi kami melalui kontak berikut:</h3>
+                    </div>
+                    <div class="col-lg-3  text-center">
+                        <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                        <h3>Bagus Rahmansyah Priyoadi (081235445996)</h3>
+                    </div>
+                    <div class="col-lg-3  text-center"><a href="https://www.instagram.com/go_data/" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-instagram fa-3x wow bounceIn"></i>
+                        <h3>@GO_DATA</h3></a>
+                    </div>
+                    <div class="col-lg-3 text-center"><a href="mailto:risbang.bemkmipb@gmail.com" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <h3>Riset dan Pengembangan</h3></a>
+                    </div>
+                    <div class="col-lg-3 text-center"><a href="godatateam.html" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-group fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <h3>GODATA TEAM</h3></a>
+                    </div>
+                
+                </div>
+                <br>
+                <div class="text-center text-faded">
+                    <h3>Dikelola Oleh Biro Riset & Pengembangan  | Kabinet Bara Muda BEM KM IPB 2018 </h3>
+                </div>
+            </div>
+        </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/exporting.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>

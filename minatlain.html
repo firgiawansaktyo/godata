@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sub Minat Lain-GODATAIPB</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+	
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		
+		<script type="text/javascript">
+$(function () {
+
+    $(document).ready(function () {
+
+        // Build the chart
+		
+$('#container').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Persentase Responden yang Pernah Melakukan Kegiatan Wirausaha'
+        },
+
+        xAxis: {
+            categories: ['Ya','Tidak' ],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: 0,
+            y: 250,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'S-1 (PPKU/Tingkat 1)',
+            data: [63.01, 36.97 ]
+        }, {
+            name: 'S-1 (Departemen/Di Atas Tingkat 1)',
+            data: [83.52, 16.48]
+
+        }, {
+            name: 'D-3 (Diploma)',
+            data: [80.55, 19.45]
+
+        }]
+    });
+	$('#container1').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Jenis Bisnis yang Sedang Dijalani'
+        },
+
+        xAxis: {
+            categories: ['Kuliner','fashion','Usaha handmade/handicraft','Elektronik','Agrobisnis (Pertanian, peternakan, dll.)','Jasa(Desain grafis, perbaokan, dll.)', 'Jual pulsa','Lainnya' ],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: 0,
+            y: 250,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'persentase jenis usaha',
+            data: [35.0,22,8.6,5.4,5.9,14.4,1.9,7]
+        }]
+    });
+	
+	$('#container2').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Persentase Responden yang Memiliki Minat Membaca yang Tinggi'
+        },
+
+        xAxis: {
+            categories: ['Ya','Tidak' ],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: 0,
+            y: 250,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'S-1 (PPKU/Tingkat 1)',
+            data: [93.16, 6.84 ]
+        }, {
+            name: 'S-1 (Departemen/Di Atas Tingkat 1)',
+            data: [91.3, 8.7]
+
+        }, {
+            name: 'D-3 (Diploma)',
+            data: [92.49, 7.51]
+
+        }]
+    });
+	$('#container3').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Genre yang Paling Disukai Oleh Para Peminat Bacaan'
+        },
+
+        xAxis: {
+            categories: ['Puisi','Sejarah','Science fiction','Romance','Motivasi','Komedi','Horor','Detektif','Biografi','Religi','Non-Fiksi','Tulisan lain' ],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: 0,
+            y: 250,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Persentase minat bacaan',
+            data: [3, 7, 23, 23, 1, 12, 2, 13, 8, 1, 1, 6]
+        }]
+    });	
+	$('#container4').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Persentase Responden yang Memiliki Minat Menulis yang Tinggi'
+        },
+
+        xAxis: {
+            categories: ['Ya','Tidak'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: 0,
+            y: 165,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'S-1 (PPKU/Tingkat 1)',
+            data: [52.78, 47.22 ]
+        }, {
+            name: 'S-1 (Departemen/Di Atas Tingkat 1)',
+            data: [50.12, 49.88]
+
+        }, {
+            name: 'D-3 (Diploma)',
+            data: [46.42, 53.58]
+
+        }]
+    });
+	$('#container5').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Jenis Tulisan yang Diminati'
+        },
+
+        xAxis: {
+            categories: ['Essay','Berita','Artikel','Diary','Sajak/puisi','Paper','Buku','Karya ilmiah','Novel','Fiksi','Cerpen','Blog','Lainnya'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: 0,
+            y: 250,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Persentase',
+            data: [21.83, 2.28, 23.18, 2.71, 5.84, 5.92, 10.07, 9.05, 1.95, 2.54, 7.45, 1.18, 6.01 ]
+        }]
+    });
+		      
+    });
+});
+		</script>
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">GO DATA</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+             <li>
+                        <a class="page-scroll" href="godata.html">Tentang Go Data</a>
+                    </li>
+<li>
+                        <a class="page-scroll" href="infografis.html">Infografis</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="index.html#kategori">Kategori</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="index.html#survei">Kumpulan survei</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="terkini.html">Terkini</a>
+                    </li>
+                    <li>
+						<a class="page-scroll" href="database.html">Database</a>
+					</li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+	 
+    <section class="bg-custom" id="visimisi">
+        <div class="container">
+            <div class="row">
+            	<div class="col-lg-12 text-center">
+                    <br><h1 class="ajipermana">MINAT LAIN</h1>					            
+                </div>
+            </div>
+        </div>
+    </section>
+    
+                <!-- /.col-lg-12 -->
+
+
+		
+		<div class="container">
+			<div class="row">
+                   <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div><div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Presentase mahasiswa yang pernah melakukan aktivitas wirausaha</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																						Grafik berikut ini menjelaskan mengenai presentase mahasiswa yang pernah melakukan aktivitas wirausaha berdasarkan tiga tingkatan yaitu S1(PPKU/Tingkat 1), S1(Departemen/di atas tingkat 1), D-3 (Diploma)																	
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>
+                    <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+					</div>
+					  <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal1"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div><div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Jenis wirausaha yang dijalani</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																						Berikut ini merupakan grafik dari jenis bisnis yang  sedang digeluti  para mahasiswa yang pernah/sedang memiliki usaha. Data menunjukan bahwa responden lebih banyak menggeluti wirausaha dibidang kuliner														
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>
+					<div id="container1" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+					</div>
+                </div>
+         </div>	
+		 
+		 <div class="container">
+			<div class="row">
+                   <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div><div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Presentase mahasiswa yang memiliki minat membaca yang tinggi</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																					Grafik berikut ini menjelaskan mengenai presentase mahasiswa yang memiliki minat membaca yang tinggi  berdasarkan tiga tingkatan yaitu S1(PPKU/Tingkat 1), S1(Departemen/di atas tingkat 1), D-3 (Diploma)																		
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>
+                    <div id="container2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+					</div>
+					  <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal3"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div><div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Genre bacaan yang diminati responden</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																						Grafik ini menunjukkan genre bacaan yang banyak diminati oleh para responden. Data menunjukan bahwa genre romance dan scince fiction merupakan genre yang paling banyak dminati oleh para responden																		
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>
+					<div id="container3" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+					</div>
+                </div>
+         </div>
+		 <div class="container">
+			<div class="row">
+                   <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal4"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div><div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Persentase minat menulis para responden</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																					Grafik berikut ini menjelaskan mengenai presentase mahasiswa yang memiliki minat menulis yang tinggi  berdasarkan tiga tingkatan yaitu S1(PPKU/Tingkat 1), S1(Departemen/di atas tingkat 1), D-3 (Diploma). Data menunjukan bahwa tidak adanya perbedaan yang kontras antara ketiga tingkatan responden terhadap minat menulis															
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>
+                    <div id="container4" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+					</div>
+					  <div class="col-lg-6"><div class="panel-body">
+																<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal5"> <i class="fa fa-list-alt"></i>
+																deskripsi
+															</div><div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Jenis karya tulis yang diminati oleh responden</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																						Grafik ini menunjukkan bahwa jenis karya tulis yang banyak diminati oleh responden adalah karya dalam bentuk essay dan artikel																
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>
+					<div id="container5" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+					</div>
+                </div>
+         </div> 
+
+
+		
+
+		
+ <section id="contact" class=bg-dark style="padding-bottom: 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="sect

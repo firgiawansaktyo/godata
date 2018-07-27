@@ -1,0 +1,2421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Mega Survey 2017 | GODATA IPB</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		
+		<script type="text/javascript">
+$(function () {
+
+    $(document).ready(function () {
+
+        // Build the chart
+        $('#container').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+						  enabled: false
+					  },
+            title: {
+                text: 'Kehadiran pada saat Opening OMI'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Hadir',
+                    y: 60.98
+                }, {
+                    name: 'Tidak',
+                    y: 39.02
+                }]
+            }]
+        });
+		
+		$('#container2').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Presepsi tentang Kepentingan Kegiatan Diluar Kuliah'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sangat Penting',
+                    y: 42
+                },  {
+                    name: 'Sangat Tidak Penting',
+                    y: 2
+                }, {
+                    name: 'Penting',
+                    y: 55
+                }, {
+                    name: 'Tidak Penting',
+                    y: 1
+                }]
+            }]
+        });
+
+
+        $('#container2z').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Judul'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sangat Puas',
+                    y: 3.25
+                }, {
+                    name: 'Tidak Menjawab',
+                    y: 30.92
+                }, {
+                    name: 'Sangat Tidak Puas',
+                    y: 1.63
+                }, {
+                    name: 'Puas',
+                    y: 41.06
+                }, {
+                    name: 'Tidak Puas',
+                    y: 15.04
+                }]
+            }]
+        });
+		
+        $('#container23').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Alasan Mengikuti Kegiatan di Luar Kuliah'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sangat Puas',
+                    y: 1.22
+                }, {
+                    name: 'Tidak Menjawab',
+                    y: 30.92
+                }, {
+                    name: 'Sangat Tidak Puas',
+                    y: 4.47
+                }, {
+                    name: 'Puas',
+                    y: 33.33
+                }, {
+                    name: 'Tidak Puas',
+                    y: 21.95
+                }]
+            }]
+        });
+
+        $('#container2d').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Jumlah UKM/Organisasi/Komunitas yang Diikuti Saat Ini'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Tidak ada',
+                    y: 7
+                }, {
+                    name: '1',
+                    y: 39
+                }, {
+                    name: '2',
+                    y: 33
+                }, {
+                    name: '3',
+                    y: 15
+                }, {
+                    name: '4',
+                    y: 4
+                }, {
+                    name: '>4',
+                    y: 2
+                }]
+            }]
+        });
+
+
+$('#container24').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Kepuasan terhadap Ketanngapan Panitia'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sangat Puas',
+                    y: 2.03
+                }, {
+                    name: 'Tidak Menjawab',
+                    y: 30.92
+                }, {
+                    name: 'Sangat Tidak Puas',
+                    y: 2.85
+                }, {
+                    name: 'Puas',
+                    y: 39.02
+                }, {
+                    name: 'Tidak Puas',
+                    y: 17.07
+                }]
+            }]
+        });
+
+
+        $('#container25').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Kepuasan terhadap Antusiasme Mahasiswa'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sangat Puas',
+                    y: 24.39
+                }, {
+                    name: 'Tidak Menjawab',
+                    y: 30.92
+                }, {
+                    name: 'Sangat Tidak Puas',
+                    y: 0.81
+                }, {
+                    name: 'Puas',
+                    y: 30.08
+                }, {
+                    name: 'Tidak Puas',
+                    y: 5.69
+                }]
+            }]
+        });
+        
+        $('#container2g').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Kepuasan terhadap Publikasi'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sangat Puas',
+                    y: 13.01
+                }, {
+                    name: 'Tidak Menjawab',
+                    y: 30.92
+                }, {
+                    name: 'Sangat Tidak Puas',
+                    y: 1.63
+                }, {
+                    name: 'Puas',
+                    y: 38.21
+                }, {
+                    name: 'Tidak Puas',
+                    y: 8.13
+                }]
+            }]
+        });
+
+        $('#container2h').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Kepuasan terhadap Kesesuaian Ekspektasi Awal'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sangat Puas',
+                    y: 4.47
+                }, {
+                    name: 'Tidak Menjawab',
+                    y: 30.92
+                }, {
+                    name: 'Sangat Tidak Puas',
+                    y: 2.03
+                }, {
+                    name: 'Puas',
+                    y: 35.37
+                }, {
+                    name: 'Tidak Puas',
+                    y: 19.11
+                }]
+            }]
+        });
+
+$('#container3').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+                          enabled: false
+                      },
+            title: {
+                text: 'Persentase Mahasiswa yang pernah hadir pada pertandingan OMI'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Hadir',
+                    y: 79.27
+                }, {
+                    name: 'Tidak',
+                    y: 20.73
+                }]
+            }]
+        });
+        
+        $('#container3a').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Presepsi Tentang Pentingnya Kuliah Sarjana'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sangat Penting',
+                    y: 74
+                }, {
+                    name: 'Sangat Tidak Penting',
+                    y: 2
+                }, {
+                    name: 'Penting',
+                    y: 23
+                }, {
+                    name: 'Tidak Penting',
+                    y: 1 
+                }]
+            }]
+        });
+
+
+        $('#container4a').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Presentase Mahasiswa yang Mempunyai Asuransi'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Punya',
+                    y: 57
+                }, {
+                    name: 'Tidak Punya',
+                    y: 43
+                }]
+            }]
+        });
+
+ $('#container5a').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Presentase Mahasiswa yang Mempunyai Pengalaman Bisnis'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Pernah',
+                    y: 51
+                }, {
+                    name: 'Tidak Pernah',
+                    y: 49
+                }]
+            }]
+        });
+
+
+$('#container4b').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Presentase Mahasiswa yang Menyisihkan Bugdet Untuk Menabung'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Menyisihkan',
+                    y: 73
+                }, {
+                    name: 'Tidak Menyisihkan',
+                    y: 27
+                }]
+            }]
+        });
+
+
+
+        $('#container35').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Kepuasan terhadap Keamanan'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sangat Puas',
+                    y: 3.66
+                }, {
+                    name: 'Tidak Menjawab',
+                    y: 20.33
+                }, {
+                    name: 'Sangat Tidak Puas',
+                    y: 1.63
+                }, {
+                    name: 'Puas',
+                    y: 66.67
+                }, {
+                    name: 'Tidak Puas',
+                    y: 1.63
+                }]
+            }]
+        });
+        
+        $('#container31c').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Kepuasan terhadap Ketertiban'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sangat Puas',
+                    y: 3.25
+                }, {
+                    name: 'Tidak Menjawab',
+                    y: 20.33
+                }, {
+                    name: 'Sangat Tidak Puas',
+                    y: 1.63
+                }, {
+                    name: 'Puas',
+                    y: 59.76
+                }, {
+                    name: 'Tidak Puas',
+                    y: 15.04
+                }]
+            }]
+        });
+
+        $('#container3d').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Presentase Mahasiswa yang Sudah Memiliki Passport'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sudah',
+                    y: 26.19
+                }, {
+                    name: 'Belum',
+                    y: 73.81
+                }]
+            }]
+        });
+
+
+$('#container3e').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Presentase Mahasiswa yang Ingin Melanjutkan Pendidikan ke Jenjang yang Lebih Tinggi'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Ya',
+                    y: 86
+                }, {
+                    name: 'Tidak',
+                    y: 14
+                }]
+            }]
+        });
+
+
+        $('#container31f').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Kepuasan terhadap Antusiasme Mahasiswa'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sangat Puas',
+                    y: 25.20
+                }, {
+                    name: 'Tidak Menjawab',
+                    y: 20.33
+                }, {
+                    name: 'Sangat Tidak Puas',
+                    y: 2.03
+                }, {
+                    name: 'Puas',
+                    y: 41.87
+                }, {
+                    name: 'Tidak Puas',
+                    y: 10.57
+                }]
+            }]
+        });
+        
+        $('#container3g').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Kepuasan terhadap Publikasi'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sangat Puas',
+                    y: 10.57
+                }, {
+                    name: 'Tidak Menjawab',
+                    y: 20.33
+                }, {
+                    name: 'Sangat Tidak Puas',
+                    y: 3.66
+                }, {
+                    name: 'Puas',
+                    y: 55.28
+                }, {
+                    name: 'Tidak Puas',
+                    y: 10.16
+                }]
+            }]
+        });
+
+        $('#container3h').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Kepuasan terhadap Kesesuaian Ekspektasi Awal'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sangat Puas',
+                    y: 4.47
+                }, {
+                    name: 'Tidak Menjawab',
+                    y: 20.33
+                }, {
+                    name: 'Sangat Tidak Puas',
+                    y: 2.03
+                }, {
+                    name: 'Puas',
+                    y: 58.94
+                }, {
+                    name: 'Tidak Puas',
+                    y: 14.23
+                }]
+            }]
+        });
+
+	$('#container30').highcharts({
+        chart: {
+            type: 'column'
+        },
+		
+        title: {
+            text: 'Media Sosial yang Paling Sering Digunakan'
+        },
+        xAxis: {
+            categories: [
+                'Facebook',
+                'Twitter',
+                'Instagram',
+                'LINE',
+                'Whatsapp'
+            ],
+            crosshair: true
+			
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0,
+				showInLegend: false,
+				
+            }
+        },
+		credits: {
+      enabled: false
+  },
+        series: [{
+         
+            data: [6.05, 3.20, 9.61, 63.70, 17.44]
+
+        }]
+
+    });	$('#container4').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Jenis Media Publikasi yang Disukai'
+        },
+        xAxis: {
+            categories: [
+                'Hardcopy (Poster, pamflet, brosur)',
+                'Spanduk atau Baliho',
+                'media Sosial Statis',
+                'Media Sosial Dinamis',
+                'Whatsapp'
+				],
+            crosshair: true
+			
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0,
+				showInLegend: false,
+				
+            }
+        },
+		credits: {
+      enabled: false
+  },
+        series: [{
+         
+            data: [14.29, 10.36, 26.79, 48.57]
+
+        }]
+    });
+	
+$('#container5').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Informasi yang Diminati oleh Mahasiswa IPB'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Keilmuan',
+                    y: 21
+                }, {
+                    name: 'Olahraga',
+                    y: 12
+                }, {
+                    name: 'Senibudaya',
+                    y: 18
+                }, {
+                    name: 'Sosial politik',
+                    y: 12
+                }, {
+                    name: 'Pasca kampus',
+                    y: 18
+                }, {
+                    name: 'Pengembangan masyarakat',
+                    y: 20
+                }]
+            }]
+        });
+		
+$('#container6').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Intensitas Mahasiswa Baca Publikasi di Mading/Selembaran'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Sering',
+                    y: 22
+                }, {
+                    name: 'Jarang',
+                    y: 76
+                }, {
+                    name: 'Tidak pernah',
+                    y: 2
+                }, {
+                    name: 'Tidak menjawab',
+                    y: 0
+                }]
+            }]
+        });
+$('#container7').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+      enabled: false
+  },
+            title: {
+                text: 'Kepuasan dengan Pelayanan Kemahasiswaan IPB'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Ya',
+                    y: 60
+                }, {
+                    name: 'Tidak',
+                    y: 39
+                }, {
+                    name: 'Tidak menjawab',
+                    y: 1
+                }]
+            }]
+        });
+		
+$('#container8').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Alasan Tidak Puas dengan Pelayanan Lembaga Kemahasiswaan IPB'
+        },
+
+        xAxis: {
+            categories: ['Informasi kurang', 'Birokrasi sangat sulit', 'Fasilitas berkurang', 'terlalu berorientasi event organizer', 'pelayanan masih kurang', 'kurang efektif', 'output kurang terasa', 'kurang berprestasi', 'Lain-lain/tidak menjawab'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Persentase',
+            data: [12, 16, 6, 1, 32, 5, 11, 4, 15]
+        }]
+    });
+	
+	$('#container9a').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Media Publikasi untuk Mendapatkan Info OMI 2017'
+        },
+
+        xAxis: {
+            categories: ['Line', 'Instagram', 'Whatsapp', 'Poster/Media Cetak', 'Twitter', 'Facebook', 'Lainnya'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Persentase',
+            data: [95.12, 58.54, 5.69, 11.38, 2.85, 0.81, 5.7]
+        }]
+    });
+
+    $('#container9b').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Alasan tidak hadir OMI'
+        },
+
+        xAxis: {
+            categories: ['Urusan Keluarga', 'Masalah Kesehatan', 'Tidak suka dan malas', 'Akademik', 'Ada Kegiatan lain', 'Sedang di luar Bogor', 'Jarak dan transport', 'Tidak Tahu Jadwal', 'Jam malam', 'urusan agama', 'tidak menjawab'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Persentase',
+            data: [0.41, 1.22, 1.63, 2.44 , 9.76, 0.81, 1.63, 1.22, 0.41, 1.63, 78.86]
+        }]
+    });
+
+    $('#container9c').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Kegiatan yang Selain Kuliah'
+        },
+
+        xAxis: {
+            categories: ['Semangat untuk OMI 2017', 'Publikasi perlu ditingkatkan', 'Jangan ada kecurangan', 'Panitia harus lebih tegas', 'Harus tepat waktu', 'Semoga lebih baik lagi', 'Jadwal jangan diubah-ubah', 'Lainnya'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Persentase',
+            data: [32, 18, 6, 31, 7, 5, 1]
+        }]
+    });
+
+
+    $('#container5b').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Jenis Bisnis yang Dimiliki'
+        },
+
+        xAxis: {
+            categories: ['Distributor/Reseller', 'Kuliner', 'Jasa', 'Pertanian/Agribisnis', 'Fashion', 'Lainnya'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Persentase',
+            data: [39, 34, 16, 3, 2, 6]
+        }]
+    });
+
+
+    $('#container4c').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Besarnya Uang yang Disisihkan Tiap Bulan'
+        },
+
+        xAxis: {
+            categories: ['0', 'Rp 1 - Rp 50.000', 'Rp 50.001 - Rp 100.000', 'Rp 100.001 - 200.000', '>Rp 200.000'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Persentase',
+            data: [27, 20, 29, 13, 11]
+        }]
+    });
+
+
+    $('#container3f').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Rencana Menikah'
+        },
+
+        xAxis: {
+            categories: ['<=21', '22', '23', '24', '25', '26', '27', '28', '29', '>=30'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Persentase',
+            data: [3, 5, 13, 21, 31, 10, 9, 5, 1, 2]
+        }]
+    });
+
+
+
+
+    $('#container3b').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Rencana Utama Setelah Lulus dari IPB'
+        },
+
+        xAxis: {
+            categories: ['Bekerja', 'Berbisnis', 'Melanjutkan Studi', 'Menikah', 'Travelling', 'Lainnya'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Persentase',
+            data: [43, 17, 30, 5, 3, 2]
+        }]
+    });
+
+
+     $('#container3c').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Negara yang Paling Ingin Dikunjungi'
+        },
+
+        xAxis: {
+            categories: ['Jepang', 'Jerman', 'Arab Saudi', 'Inggris', 'Korea Selatan', 'Turki', 'Belanda', 'Perancis', 'Australia', 'Amerika', 'Lainnya'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Persentase',
+            data: [24, 13, 12, 9, 8, 5, 4, 4, 3, 3, 17]
+        }]
+    });
+
+
+    $('#container2c').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Alasan Mengikuti Kegiatan Selain Kuliah'
+        },
+
+        xAxis: {
+            categories: ['Menambah Softskill', 'Menambah Pengalaman', 'Menambah Teman', 'Mengisi Waktu Luang', 'Memberikan Manfaat Bagi Orang Lain', 'Mencari Jodoh',  'Lainnya'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Persentase',
+            data: [52, 32, 5, 4, 1, 1, 5]
+        }]
+    });
+
+
+$('#container2e').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Jam Tidur'
+        },
+
+        xAxis: {
+            categories: ['Sebelum Jam 21.00', 'Antara Jam 21.00-22.00', 'Antara Jam 22.00-23.00', 'Antara Jam 23.00-24.00', 'Setelah Jam 00.00'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Persentase',
+            data: [2, 10, 26, 40, 22]
+        }]
+    });
+
+$('#container2f').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Jam Bangun'
+        },
+
+        xAxis: {
+            categories: ['Sebelum Jam 03.00', 'Antara Jam 03.00-04.00', 'Antara Jam 04.00-05.00', 'Antara Jam 05.00-06.00', 'Setelah Jam 06.00'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Persentase',
+            data: [3, 16, 37, 36, 8]
+        }]
+    });
+
+
+
+	$('#container10').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+						  enabled: false
+					  },
+            title: {
+                text: 'Kemudahan Mendapat Beasiswa'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Ya',
+                    y: 54
+                }, {
+                    name: 'Tidak',
+                    y: 45
+                }, {
+                    name: 'Tidak menjawab',
+                    y: 1
+                }]
+            }]
+        });
+	$('#container11').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Alasan Menjawab Tidak Mudah'
+        },
+
+        xAxis: {
+            categories: ['Prosedur ribet', 'Informasi kurang', 'Masalah IP', 'Saingan banyak', 'Hanya untuk orang tidak mampu', 'Kurangnya beasiswa di diploma', 'Kurang publikasi', 'Belum dapat sama sekali', 'Lain-lain/tidak menjawab'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Persentase',
+            data: [16.26, 10.98, 0.41, 23.98, 11.79, 17.48, 0.81, 18.29]
+        }]
+    });
+	$('#container12').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Minat Mahasiswa IPB'
+        },
+
+        xAxis: {
+            categories: ['Pengembangan masyarakat','Sosial politik','Seni budaya','Olahraga','Keilmuan'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: false
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Persen minat',
+            data: [17, 8, 24, 18, 32]
+        }]
+    });
+	$('#container13').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+						  enabled: false
+					  },
+            title: {
+                text: 'Kegiatan yang Dapat Meningkatkan Prestasi Olahraga di IPB'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'OMI',
+                    y: 67
+                }, {
+                    name: 'Kompetisi luar',
+                    y: 26
+                }, {
+                    name: 'Lain-lain',
+                    y: 5
+                }, {
+                    name: 'Tidak menjawab',
+                    y: 2
+                }]
+            }]
+        });
+		$('#container14').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+						  enabled: false
+					  },
+            title: {
+                text: 'Kegiatan yang Dapat Meningkatkan Seni dan Budaya'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'IPB Art Contest (IAC)',
+                    y: 34
+                }, {
+                    name: 'Genus',
+                    y: 32
+                }, {
+                    name: 'Kompetisi Luar Kampus',
+                    y: 20
+                }, {
+                    name: 'Expo',
+                    y: 10
+                }, {
+                    name: 'Lainnya',
+                    y: 4
+                }]
+            }] 
+        });
+			$('#container15').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+						  enabled: false
+					  },
+            title: {
+                text: 'Kajian Politik yang Disukai Mahasiswa IPB'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Politik',
+                    y: 7
+                }, {
+                    name: 'Pertanian',
+                    y: 14
+                }, {
+                    name: 'Sosial Masyarakat',
+                    y: 36
+                }, {
+                    name: 'Ekonomi',
+                    y: 17
+                }, {
+                    name: 'Pendidikan',
+                    y: 23
+                }, {
+                    name: 'Lainnya',
+                    y: 3
+                }]
+            }] 
+        });
+	
+    });
+});
+		</script>
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html"><img src="img/brand.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html#survei">Survei</a>
+                    </li>             
+                    <li>
+                        <a class="page-scroll" href="terkini.html">Terkini</a>
+                    </li>
+                    <li>
+                            <a class="page-scroll" href="database.html">Database</a>
+                        </li>
+                        <li>
+                                <a class="page-scroll" href="infografis.html">Infografis</a>
+                            </li>
+                    <li>
+                        <a class="page-scroll" href="godata.html"> GODATA</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="index.html#kategori">Kategori</a>
+                    </li>
+
+
+                    <li>
+                        <a class="page-scroll" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section class="bg-custom" id="visimisi">
+        <div class="container">
+            <div class="row">
+            	<div class="col-lg-12 text-center">
+                    <br><h1 style="font-family: 'Rodondo';">MEGA SURVEY GODATA 2017</h2>
+             
+                </div>
+            </div>
+        </div>
+    </section>   
+
+
+		<div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+					
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+		
+        <section id="aktivitas">
+                <div class="container">
+                <a style="font-size: 18px; padding: 3px;" class="btn btn-outline btn-default btn-lg" align="center">Aktivitas</a>
+        <div class="container">
+            <div class="row">
+                <div class="row">
+           
+                <div class="col-lg-6">
+				    <div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+				<div class="col-lg-6">																
+                    <div id="container2d" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="col-lg-6">                                                              
+                    <div id="container2c" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="col-lg-6">                                                              
+                    <div id="container2b" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="container2e" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="col-lg-6">                                                              
+                    <div id="container2f" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+            </div>
+                
+            </div>
+        </div></div></section>
+
+
+
+
+
+        <section id="madep">
+                <div class="container">
+                <a style="font-size: 18px; padding: 3px;" class="btn btn-outline btn-default btn-lg">Rencana Masa Depan</a>
+            <div class="row">
+                <div class="row">
+                <div class="col-lg-6">
+                    <div id="container3a" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="col-lg-6">                                                              
+                    <div id="container3b" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="col-lg-6">                                                              
+                    <div id="container3c" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="col-lg-6">                                                              
+                    <div id="container3d" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="container3e" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="col-lg-6">                                                              
+                    <div id="container3f" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+     <section id="finansial">
+                <div class="container">
+                <a style="font-size: 18px; padding: 3px;" class="btn btn-outline btn-default btn-lg">Finansial</a>
+            <div class="row">
+                <div class="row">
+                <div class="col-lg-6">
+                    <div id="container4a" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="col-lg-6">                                                              
+                    <div id="container4b" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="col-lg-6">                                                              
+                    <div id="container4c" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="bisnis">
+                <div class="container">
+                <a style="font-size: 18px; padding: 3px;" class="btn btn-outline btn-default btn-lg">Bisnis</a>
+            <div class="row">
+                <div class="row">
+                <div class="col-lg-6">
+                    <div id="container5a" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                    <div class="col-lg-12 text-center"><h4 style="font-family: 'Moon';font-size: 20px!important;">49% Tidak memiliki pengalaman di bidang bisnis, selanjutnya tidak dimasukkan ke grafik pada hasil selanjutnya</h4></div>
+                </div>
+                <div class="col-lg-6">                                                              
+                    <div id="container5b" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	  <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+				            <hr class="primary">
+						
+							<hr class="primary">
+                </div>
+            </div>
+        </div>
+
+
+
+        <section id="contact" class=bg-dark style="padding-bottom: 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Hubungi kami</h2>
+        
+                        <h3>Seputar pertanyaan, kritik, dan saran silahkan menghubungi kami melalui kontak berikut:</h3>
+                    </div>
+                    <div class="col-lg-3  text-center">
+                        <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                        <h3>Bagus Rahmansyah Priyoadi (081235445996)</h3>
+                    </div>
+                    <div class="col-lg-3  text-center"><a href="https://www.instagram.com/go_data/" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-instagram fa-3x wow bounceIn"></i>
+                        <h3>@GO_DATA</h3></a>
+                    </div>
+                    <div class="col-lg-3 text-center"><a href="mailto:risbang.bemkmipb@gmail.com" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <h3>Riset dan Pengembangan</h3></a>
+                    </div>
+                    <div class="col-lg-3 text-center"><a href="godatateam.html" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-group fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <h3>GODATA TEAM</h3></a>
+                    </div>
+                
+                </div>
+                <br>
+                <div class="text-center text-faded">
+                    <h3>Dikelola Oleh Biro Riset & Pengembangan  | Kabinet Bara Muda BEM KM IPB 2018 </h3>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/exporting.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Survei PKM IPB-GODATAIPB</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		
+		<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Pengajuan Proposal PKM'
+        },
+        subtitle: {
+            text: 'SUMBER: PKM Center'
+        },
+		credits: {
+						  enabled: false
+					  },
+        xAxis: {
+            categories: ['2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016']
+        },
+        yAxis: {
+            title: {
+                text: 'Jumlah proposal'
+            }
+        },
+        plotOptions: {
+            line: {
+			showInLegend: false,
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+			
+        },
+        series: [{
+            name: '',
+            data: [202, 427, 711, 831, 887, 872, 965, 790, 995, 799, 1084]
+        }]
+    });
+	$('#container1').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Proposal yang Didanai DIKTI'
+        },
+		credits: {
+						  enabled: false
+					  },
+        subtitle: {
+            text: 'Source: PKM Center'
+        },
+        xAxis: {
+            categories: ['2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016']
+        },
+        yAxis: {
+            title: {
+                text: 'Jumlah proposal'
+            }
+        },
+        plotOptions: {
+            line: {
+			showInLegend: false,
+                dataLabels: {
+                    enabled: true
+					
+                },
+                enableMouseTracking: false
+				
+            }
+        },
+		
+        series: [{
+            
+            data: [94, 151, 257, 311, 321, 422, 405, 351, 355, 293, 205]
+        }]
+    });
+	$('#container2').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Perkiraan Jumlah Proposal PKM yang Diajukan Pada Tahun 2017'
+        },
+		credits: {
+						  enabled: false
+					  },
+    
+        
+        xAxis: {
+            categories: ['2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016','2017']
+        },
+        yAxis: {
+            title: {
+                text: 'Jumlah proposal'
+            }
+        },
+        plotOptions: {
+            line: {
+			showInLegend: false,
+                dataLabels: {
+                    enabled: true
+					
+                },
+                enableMouseTracking: false
+				
+            }
+        },
+		
+        series: [{
+           
+            data: [202, 427, 711, 831, 887, 872, 965, 790, 995, 799, 1084, 959]
+        }]
+    });
+	$('#container3').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Alasan Utama Mahasiswa IPB Kurang Berminat Terhadap PKM'
+        },
+
+        xAxis: {
+            categories: ['Sulit Menemukan Ide Kreatif', 'Tahapan administrasi yang rumit', 'Mengalami kesulitan dalam mendapatkan dosen', 'kurang informasi da sosialisasi', 'Jadwal kuliah/parktikum yang padat', 'Sudah distribusikan oleh kegiatan organisasi', 'Lain-lain'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Alasan',
+            data: [16.67, 16.67, 1.56, 11.98, 39.01, 8.33, 5.73]
+        }]
+    });
+	$('#container4').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+			credits: {
+						  enabled: false
+					  },
+            title: {
+                text: 'Minat Mahasiswa IPB Mengikuti PKM Tahun 2016'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Persentase',
+                colorByPoint: true,
+                data: [{
+                    name: 'Ya',
+                    y: 38.54
+                }, {
+                    name: 'Tidak',
+                    y: 29.17
+                }, {
+                    name: 'Ragu-ragu',
+                    y: 32.29
+                }]
+            }]
+        });
+			
+	$('#container5').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Jenis PKM yang Paling Diminati'
+        },
+        xAxis: {
+            categories: [
+                'PKM-P',
+				'PKM-K',
+				'PKM-M',
+				'PKM-T', 
+				'PKM-PAI',
+				'PKM-GT',
+				'Belum paham jenis PKM'
+				
+            ],
+            crosshair: true
+			
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Persentase (%)'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0,
+				showInLegend: false,
+				
+            }
+        },
+		credits: {
+      enabled: false
+  },
+        series: [{
+         
+             data: [22.90, 38.93, 16.79, 6.11, 0.76, 10.68,3.82]
+
+        }]
+    });
+			
+	
+});
+		</script>
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html"><img src="img/brand.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html#survei">Survei</a>
+                    </li>             
+                    <li>
+                        <a class="page-scroll" href="terkini.html">Terkini</a>
+                    </li>
+                    <li>
+                            <a class="page-scroll" href="database.html">Database</a>
+                        </li>
+                        <li>
+                                <a class="page-scroll" href="infografis.html">Infografis</a>
+                            </li>
+                    <li>
+                        <a class="page-scroll" href="godata.html"> GODATA</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="index.html#kategori">Kategori</a>
+                    </li>
+
+
+                    <li>
+                        <a class="page-scroll" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <section class="bg-custom" id="visimisi">
+        <div class="container">
+            <div class="row">
+            	<div class="col-lg-12 text-center">
+                    <br><h1 style="font-family: 'Rodondo';">MINAT MAHASISWA IPB TERHADAP PROGRAM KREATIVITAS MAHASISWA (PKM)</h2>
+             
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="services">
+        <div class="container">
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                <div class="col-lg-6">
+				<div class="panel-body">
+															
+															</div>
+														
+																<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Pengeluaran untuk tempat tinggal</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																									[POST EVENT SURVEY S1: MPKMB 53] <br> <br>"Salam Adhikarya!" <br> Kami ucapkan selamat dan terima kasih atas seluruh semangat dan keringat yang tercurahkan untuk berbagai pencapaian optimal yang diraih selama rangkaian MPKMB 53 tempo hari. Tak terasa sudah beberapa minggu berlalu setelah teman-teman berhasil melewati “gerbang selamat datang” MPKMB 53.
+																									Inilah saatnya Anda berkesempatan untuk memberi penilaian dan pendapat tentang MPKMB 53! Ayo, tunggu apalagi, kemukakan opini Anda mengenai MPKMB 53 di link yang kami bagi demi MPKMB tahun depan yang lebih baik!<br><br>
+																									Survei dibuka dari tgl 26 September - 28 September 2016. Bagi kamu Mahasiswa IPB 53 yang terpilih menjadi responden secara acak, kami mohon keikutsertaan nya dengan mengisi form online yang akan kami share secara personal.
+																									<br>																					
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>
+                   <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="col-lg-6">
+				<div class="panel-body">
+															
+															</div>
+														
+																<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Pengeluaran untuk tempat tinggal</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																									[POST EVENT SURVEY S1: MPKMB 53] <br> <br>"Salam Adhikarya!" <br> Kami ucapkan selamat dan terima kasih atas seluruh semangat dan keringat yang tercurahkan untuk berbagai pencapaian optimal yang diraih selama rangkaian MPKMB 53 tempo hari. Tak terasa sudah beberapa minggu berlalu setelah teman-teman berhasil melewati “gerbang selamat datang” MPKMB 53.
+																									Inilah saatnya Anda berkesempatan untuk memberi penilaian dan pendapat tentang MPKMB 53! Ayo, tunggu apalagi, kemukakan opini Anda mengenai MPKMB 53 di link yang kami bagi demi MPKMB tahun depan yang lebih baik!<br><br>
+																									Survei dibuka dari tgl 26 September - 28 September 2016. Bagi kamu Mahasiswa IPB 53 yang terpilih menjadi responden secara acak, kami mohon keikutsertaan nya dengan mengisi form online yang akan kami share secara personal.
+																									<br>																					
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>
+                    <div id="container1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+            </div>
+                
+            </div>
+        </div>
+		<div class="container">
+            <div class="row">
+                <div class="row">
+                <div class="col-lg-6">
+				<div class="panel-body">
+																
+															</div>
+														
+																<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Pengeluaran untuk tempat tinggal</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																									[POST EVENT SURVEY S1: MPKMB 53] <br> <br>"Salam Adhikarya!" <br> Kami ucapkan selamat dan terima kasih atas seluruh semangat dan keringat yang tercurahkan untuk berbagai pencapaian optimal yang diraih selama rangkaian MPKMB 53 tempo hari. Tak terasa sudah beberapa minggu berlalu setelah teman-teman berhasil melewati “gerbang selamat datang” MPKMB 53.
+																									Inilah saatnya Anda berkesempatan untuk memberi penilaian dan pendapat tentang MPKMB 53! Ayo, tunggu apalagi, kemukakan opini Anda mengenai MPKMB 53 di link yang kami bagi demi MPKMB tahun depan yang lebih baik!<br><br>
+																									Survei dibuka dari tgl 26 September - 28 September 2016. Bagi kamu Mahasiswa IPB 53 yang terpilih menjadi responden secara acak, kami mohon keikutsertaan nya dengan mengisi form online yang akan kami share secara personal.
+																									<br>																					
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>
+                   <div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="col-lg-6">
+				<div class="panel-body">
+																
+															</div>
+														
+																<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Pengeluaran untuk tempat tinggal</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																									[POST EVENT SURVEY S1: MPKMB 53] <br> <br>"Salam Adhikarya!" <br> Kami ucapkan selamat dan terima kasih atas seluruh semangat dan keringat yang tercurahkan untuk berbagai pencapaian optimal yang diraih selama rangkaian MPKMB 53 tempo hari. Tak terasa sudah beberapa minggu berlalu setelah teman-teman berhasil melewati “gerbang selamat datang” MPKMB 53.
+																									Inilah saatnya Anda berkesempatan untuk memberi penilaian dan pendapat tentang MPKMB 53! Ayo, tunggu apalagi, kemukakan opini Anda mengenai MPKMB 53 di link yang kami bagi demi MPKMB tahun depan yang lebih baik!<br><br>
+																									Survei dibuka dari tgl 26 September - 28 September 2016. Bagi kamu Mahasiswa IPB 53 yang terpilih menjadi responden secara acak, kami mohon keikutsertaan nya dengan mengisi form online yang akan kami share secara personal.
+																									<br>																					
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>
+                    <div id="container3" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+            </div>
+                
+            </div>
+        </div>
+				<div class="container">
+            <div class="row">
+                <div class="row">
+                <div class="col-lg-6">
+				<div class="panel-body">
+															
+															</div>
+														
+																<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Pengeluaran untuk tempat tinggal</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																									[POST EVENT SURVEY S1: MPKMB 53] <br> <br>"Salam Adhikarya!" <br> Kami ucapkan selamat dan terima kasih atas seluruh semangat dan keringat yang tercurahkan untuk berbagai pencapaian optimal yang diraih selama rangkaian MPKMB 53 tempo hari. Tak terasa sudah beberapa minggu berlalu setelah teman-teman berhasil melewati “gerbang selamat datang” MPKMB 53.
+																									Inilah saatnya Anda berkesempatan untuk memberi penilaian dan pendapat tentang MPKMB 53! Ayo, tunggu apalagi, kemukakan opini Anda mengenai MPKMB 53 di link yang kami bagi demi MPKMB tahun depan yang lebih baik!<br><br>
+																									Survei dibuka dari tgl 26 September - 28 September 2016. Bagi kamu Mahasiswa IPB 53 yang terpilih menjadi responden secara acak, kami mohon keikutsertaan nya dengan mengisi form online yang akan kami share secara personal.
+																									<br>																					
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>
+                   <div id="container4" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="col-lg-6">
+				<div class="panel-body">
+																
+															</div>
+														
+																<div class="panel-body">
+																		<!-- Button trigger modal -->
+																		
+												<!-- Modal -->
+																		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																						<h4 class="modal-title" id="myModalLabel">Pengeluaran untuk tempat tinggal</h4>
+																					</div>
+																							<div class="modal-body">
+																							
+																									[POST EVENT SURVEY S1: MPKMB 53] <br> <br>"Salam Adhikarya!" <br> Kami ucapkan selamat dan terima kasih atas seluruh semangat dan keringat yang tercurahkan untuk berbagai pencapaian optimal yang diraih selama rangkaian MPKMB 53 tempo hari. Tak terasa sudah beberapa minggu berlalu setelah teman-teman berhasil melewati “gerbang selamat datang” MPKMB 53.
+																									Inilah saatnya Anda berkesempatan untuk memberi penilaian dan pendapat tentang MPKMB 53! Ayo, tunggu apalagi, kemukakan opini Anda mengenai MPKMB 53 di link yang kami bagi demi MPKMB tahun depan yang lebih baik!<br><br>
+																									Survei dibuka dari tgl 26 September - 28 September 2016. Bagi kamu Mahasiswa IPB 53 yang terpilih menjadi responden secara acak, kami mohon keikutsertaan nya dengan mengisi form online yang akan kami share secara personal.
+																									<br>																					
+																							</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																				<!-- /.modal-content -->
+																			</div>
+																			<!-- /.modal-dialog -->
+																		</div>
+																		<!-- /.modal -->
+																 </div>
+                    <div id="container5" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+            </div>
+                
+            </div>
+        </div>
+    </section>
+	    <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+				            <hr class="primary">
+						<section>
+						<div class="container">
+						</div>
+						<a class="btn btn-primary btn-lg-8 "  href="SURVEI PKM.pdf" download="MINAT MAHASISWA IPB TERHADAP PROGRAM KREATIVITAS MAHASISWA (PKM).pdf"><i class="fa fa-download"></i>  Download PDF</a>
+						</section>
+							<hr class="primary">
+                </div>
+            </div>
+        </div>
+	
+        <section id="contact" class=bg-dark style="padding-bottom: 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Hubungi kami</h2>
+        
+                        <h3>Seputar pertanyaan, kritik, dan saran silahkan menghubungi kami melalui kontak berikut:</h3>
+                    </div>
+                    <div class="col-lg-3  text-center">
+                        <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                        <h3>Bagus Rahmansyah Priyoadi (081235445996)</h3>
+                    </div>
+                    <div class="col-lg-3  text-center"><a href="https://www.instagram.com/go_data/" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-instagram fa-3x wow bounceIn"></i>
+                        <h3>@GO_DATA</h3></a>
+                    </div>
+                    <div class="col-lg-3 text-center"><a href="mailto:risbang.bemkmipb@gmail.com" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <h3>Riset dan Pengembangan</h3></a>
+                    </div>
+                    <div class="col-lg-3 text-center"><a href="godatateam.html" style="font-size: 14px;margin-left: -10px">
+                        <i class="fa fa-group fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <h3>GODATA TEAM</h3></a>
+                    </div>
+                
+                </div>
+                <br>
+                <div class="text-center text-faded">
+                    <h3>Dikelola Oleh Biro Riset & Pengembangan  | Kabinet Bara Muda BEM KM IPB 2018 </h3>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/exporting.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>
